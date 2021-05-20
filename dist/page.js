@@ -36,3 +36,4 @@ var PageP = function Page(_ref) {
 };
 
 exports.default = Page;
+exports.horizontal = PageP;
