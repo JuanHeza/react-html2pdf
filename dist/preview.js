@@ -91,7 +91,7 @@ var Preview2 = function (_React$Component) {
           children = _props.children;
 
       var htmlDoc = { __html: html };
-      var _page2.horizontal;
+      var page = _page2.horizontal;
       return _react2.default.createElement(
         'div',
         null,
