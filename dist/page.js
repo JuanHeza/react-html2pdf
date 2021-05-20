@@ -22,5 +22,17 @@ var Page = function Page(_ref) {
     children
   );
 };
+var PageP = function Page(_ref) {
+  var children = _ref.children,
+      singleMode = _ref.singleMode,
+      id = _ref.id;
+  return _react2.default.createElement(
+    "div",
+    {
+      id: id, className: "bg-white shadow-1 center pa4",
+      style: { width: "297mm", height: singleMode ? "210mm" : "" } },
+    children
+  );
+};
 
 exports.default = Page;
