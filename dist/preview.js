@@ -49,7 +49,7 @@ var Preview = function (_React$Component) {
           children = _props.children;
 
       var htmlDoc = { __html: html };
-      var page = orientation === "h" ? _page2.horizontal : _page2.default;
+      var page =  _page2.default;
       return _react2.default.createElement(
         'div',
         null,
@@ -72,4 +72,46 @@ var Preview = function (_React$Component) {
   return Preview;
 }(_react2.default.Component);
 
+var Preview2 = function (_React$Component) {
+  _inherits(Preview, _React$Component);
+
+  function Preview() {
+    _classCallCheck(this, Preview);
+
+    return _possibleConstructorReturn(this, (Preview.__proto__ || Object.getPrototypeOf(Preview)).apply(this, arguments));
+  }
+
+  _createClass(Preview, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          html = _props.html,
+          id = _props.id,
+          orientation = _props.orientation,
+          children = _props.children;
+
+      var htmlDoc = { __html: html };
+      var _page2.horizontal;
+      return _react2.default.createElement(
+        'div',
+        null,
+        _reactDom2.default.createPortal(_react2.default.createElement(
+          'div',
+          { style: { opacity: 0, position: 'absolute', top: 0, zIndex: -1 } },
+          _react2.default.createElement(
+            page,
+            { id: id },
+            htmlDoc && _react2.default.createElement(Base, { html: htmlDoc }),
+            children
+          )
+        ), document.body),
+        htmlDoc && _react2.default.createElement(Base, { html: htmlDoc }),
+        children
+      );
+    }
+  }]);
+
+  return Preview;
+}(_react2.default.Component);
 exports.default = Preview;
+exports.default = Preview2;
