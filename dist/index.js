@@ -18,5 +18,6 @@ var _preview2 = _interopRequireDefault(_preview);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.Preview = _preview2.default;
+exports.PreviewH = _preview2.horizontal;
 exports.A4Page = _page2.default;
 exports.print = _helper.print;
