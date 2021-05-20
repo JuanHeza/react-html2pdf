@@ -45,9 +45,11 @@ var Preview = function (_React$Component) {
       var _props = this.props,
           html = _props.html,
           id = _props.id,
+          orientation = _props.orientation,
           children = _props.children;
 
       var htmlDoc = { __html: html };
+      var page = orientation === "h" ? _page2.horizontal : _page2.default;
       return _react2.default.createElement(
         'div',
         null,
@@ -55,7 +57,7 @@ var Preview = function (_React$Component) {
           'div',
           { style: { opacity: 0, position: 'absolute', top: 0, zIndex: -1 } },
           _react2.default.createElement(
-            _page2.default,
+            page,
             { id: id },
             htmlDoc && _react2.default.createElement(Base, { html: htmlDoc }),
             children
