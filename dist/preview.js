@@ -114,4 +114,4 @@ var Preview2 = function (_React$Component) {
   return Preview;
 }(_react2.default.Component);
 exports.default = Preview;
-exports.default = Preview2;
+exports.horizontal = Preview2;
