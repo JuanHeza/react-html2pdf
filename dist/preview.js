@@ -97,7 +97,7 @@ var Preview2 = function (_React$Component) {
         null,
         _reactDom2.default.createPortal(_react2.default.createElement(
           'div',
-          { style: { opacity: 0, position: 'absolute', top: 0, zIndex: -1, transform: rotate(90deg); } },
+          { style: { opacity: 0, position: 'absolute', top: 0, zIndex: -1} },
           _react2.default.createElement(
             page,
             { id: id },
